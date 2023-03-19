@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+body {
+  background-image:url('https://s-media-cache-ak0.pinimg.com/originals/f5/e7/73/f5e773f77a32bac74c9e98d4c3512ba5.jpg');
+  background-size: cover;
+}
+
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 700px;
+  height: 400px;
+}
+
+#btn_change_size {
+  position: absolute;
+  height: 30px;
+  left: 10px;
+  top: 10px;
+}
+        </style>
+        <script src="https://pchen66.github.io/js/three/three.min.js"></script>
+        <script src="https://rawgit.com/pchen66/panolens.js/dev/build/panolens.min.js"></script>
+    </head>
+    <body>
+        <div id="container"></div>
+        <button id="btn_change_size">Change Container Size</button>
+        <script>
+            var panorama, viewer, container, infospot;
+var containerBaseWidth = 700;
+var containerBaseHeight = 400;
+var deltaSize = 100;
+
+container = document.querySelector( '#container' );
+
+panorama = new PANOLENS.ImagePanorama( 'https://static.wixstatic.com/media/7e3fc8_d1a4ce33978f48f08d2bcff2b3e06e81~mv2.jpg/v1/fill/w_1400,h_446,al_c,q_85,enc_auto/7e3fc8_d1a4ce33978f48f08d2bcff2b3e06e81~mv2.jpg' );
+
+infospot = new PANOLENS.Infospot( 350, PANOLENS.DataImage.Info );
+infospot.position.set( 0, 0, -5000 );
+infospot.addHoverText( 'Hello Panolens', 30 );
+panorama.add( infospot );
+
+viewer = new PANOLENS.Viewer( { container: container } );
+viewer.add( panorama );
+
+function changeContainerSize ( width, height ) {
+  viewer.container.style.width = width + "px";
+  viewer.container.style.height = height + "px";
+  viewer.onWindowResize( width, height );
+}
+
+document.querySelector( '#btn_change_size' ).addEventListener( 'click', function(){
+  var newWidth = containerBaseWidth + (Math.random() - 0.5) * deltaSize;
+  var newHeight = containerBaseHeight + (Math.random() - 0.5) * deltaSize;
+  changeContainerSize( newWidth, newHeight );
+}, false );
+
+        </script>
+    </body>
+</html>
