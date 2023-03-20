@@ -405,7 +405,7 @@ section.visions {
 
 .newsletter-left {
     font-size: 22px;
-    width: 60%;
+    width: 63%;
 }
 
 .newEmail label {
@@ -420,11 +420,11 @@ section.visions {
 
 .newsletter-right {
     padding-top: 10px;
-    width: 40%;
+    width: 38%;
 }
 
 .newsletter-left p {
-    max-width: 528px;
+    max-width: 544px;
     font-size: 12.9px;
     padding-top: 18px;
 }
@@ -436,7 +436,7 @@ section.visions {
     line-height: 30px;
     padding: 0px 20px;
     border: 0;
-    width: calc(100% - 230px);
+    /* width: calc(100% - 230px); */
     cursor: pointer;
     margin-left: -4px;
     font-size:13px;
@@ -3391,7 +3391,7 @@ section.carrer-section.d-flex.flex-row>div {
 }
 .profile_3 {
     
-    margin-top: 50px !important;
+    margin-top: 20px !important;
 }
 
 .profile span {
