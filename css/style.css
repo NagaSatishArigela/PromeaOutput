@@ -3554,6 +3554,7 @@ nav .nav_wrap_pc>ul>li .nav_sub .subBox1 .sub_left>ul>li.promo>a {
         padding: 0px !important;
         margin: 0px !important;
         width: 100%;
+        visibility: hidden;
     }
 
     .info_type1 .vision-type2 ul li:nth-child(1) div {
