@@ -7625,9 +7625,9 @@ nav .nav_wrap_pc>ul>li>a>span {
         display: none;
     }
 
-    .selectBox {
+    /* .selectBox {
         border-bottom: 1px solid #dadada;
-    }
+    } */
 
     .m-tab {
         display: block;

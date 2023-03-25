@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    font-family: "Poppins";
+    font-family: "Poppins" !important;
     font-size: 16px;
     list-style-type: none;
 }
@@ -14,7 +14,7 @@ a {
 }
 
 @font-face {
-    font-family: futura-lt-book;
+    font-family: Poppins;
     src: url(FuturaLT-Book.ttf);
 }
 
@@ -26,7 +26,7 @@ a {
 body {
     /* font-family: 'Mulish', sans-serif;
     font-family: 'Roboto', sans-serif;
-    font-family: 'futura-lt-book', sans-serif !important; */
+    font-family: 'Poppins', sans-serif !important; */
     font-family: 'Poppins' !important;
     color: #333;
     background: #f2f8ff;
@@ -132,7 +132,7 @@ header:hover .logoImg {
     font-size: 270px;
     line-height: 1;
     font-family: 'Roboto', sans-serif;
-    font-family: Orbitron-ExtraBold;
+    font-family: Orbitron-ExtraBold !important;
     font-style: italic;
     /* display:inline-block;
     background-image: linear-gradient(to right, #225280ed , #126f53de);
@@ -229,7 +229,7 @@ header:hover .logoImg {
 }
 
 .product-left-sec ul#accordion li ul li a {
-    color: #888888;
+    /* color: #888888; */
     text-transform: none;
     font-size: 13px;
     /* font-family: Poppins; */
@@ -247,7 +247,7 @@ header:hover .logoImg {
 
 .container-m.products-m {
     display: flex;
-    padding: 50px 0 40px;
+    /* padding: 50px 0 40px; */
 }
 
 .product-left-sec {
@@ -1453,7 +1453,7 @@ section.testimonials {
 .single-box h4 {
     font-weight: 600;
     margin: 0;
-    font-family: 'Allura', cursive;
+    font-family: 'Allura', Poppins;
     font-size: 35px;
 }
 
@@ -2569,7 +2569,7 @@ h4.title a {
     padding: 20px;
     text-align: left;
     box-shadow: inset 0 0 20px -5px #ededed;
-
+    max-height:435px;
     border: 0;
     margin: 10px;
     border-radius: 0 !important;
@@ -4654,3 +4654,7 @@ color:white
     font-size: 16px;
     color: black;
 }
+
+/* .hfeed.site{
+    overflow:hidden;
+} */

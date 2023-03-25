@@ -19,7 +19,7 @@
     <script src="js/common.js"></script>
     <link href="styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <style>
@@ -58,6 +58,20 @@
     </style>
     <link href="./css/jquery-simple-mobilemenu-slide.css" rel="stylesheet" />
     <script src="./js/jquery-simple-mobilemenu.js"></script>
+    <script>
+      $(document).ready(function () {
+          $("#accordion li > h4").click(function () {
+
+              if ($(this).next().is(':visible')) {
+                  $(this).next().slideUp(300);
+                  $(this).children(".plusminus").text('+');
+              } else {
+                  $(this).next("#accordion ul").slideDown(300);
+                  $(this).children(".plusminus").text('-');
+              }
+          });
+      });
+  </script>
 </head>
 
 <body>
@@ -568,12 +582,12 @@
                 
             </div> -->
     </section>
-    <section class="">
-        <div class="container-m products-m">
+    <section class="container-m sproduct products-m">
+        
             <div class="product-left-sec">
                 <ul id="accordion">
                     <li class="active-product">
-                        <a href="electrolyte.html">
+                        
                             <h4>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="41.682" height="41.799"
                                     viewBox="0 0 41.682 41.799">
@@ -611,19 +625,18 @@
                                             stroke-width="1.5"></circle>
                                     </g>
                                 </svg>
-                                Electrolyte 
+                                Electrolyte <span class="plusminus">+</span>
                             </h4>
-                        </a>
-                        <!-- <ul>
-              <li><a href="#">Analyzers</a></li>
-              <li><a href="#">System Reagents</a></li>
-              <li><a href="#">System Consumables</a></li>
-              <li><a href="#">Generic Reagents</a></li>
-              <li><a href="#">Generic Consumables</a></li>
-            </ul> -->
+                            <ul>
+                              <li><a href="electrolyte.html">Analyzers</a></li>
+                              <li><a href="electrolyte.html">System Reagents</a></li>
+                              <li><a href="electrolyte.html">System Consumables</a></li>
+                              <li><a href="electrolyte.html">Generic Reagents</a></li>
+                              <li><a href="electrolyte.html">Generic Consumables</a></li>
+                            </ul>
                     </li>
-                    <li>
-                        <a href="hematology.html">
+                    <li class="">
+                        
                             <h4> <svg xmlns="http://www.w3.org/2000/svg" width="46.274" height="40.186"
                                     viewBox="0 0 46.274 40.186">
                                     <g id="Group_24563" data-name="Group 24563" transform="translate(1.055 0.806)">
@@ -676,19 +689,19 @@
                                         </g>
                                     </g>
                                 </svg>
-                                Hematology
+                                Hematology <span class="plusminus">+</span>
                             </h4>
-                        </a>
-                        <!-- <ul>
-              <li><a href="#">Analyzers</a></li>
-              <li><a href="#">System Reagents</a></li>
-              <li><a href="#">System Consumables</a></li>
-              <li><a href="#">Generic Reagents</a></li>
-              <li><a href="#">Generic Consumables</a></li>
-            </ul> -->
+                        
+                            <ul>
+                              <li><a href="hematology.html">Analyzers</a></li>
+                              <li><a href="hematology.html">System Reagents</a></li>
+                              <li><a href="hematology.html">System Consumables</a></li>
+                              <li><a href="hematology.html">Generic Reagents</a></li>
+                              <li><a href="hematology.html">Generic Consumables</a></li>
+                            </ul> 
                     </li>
-                    <li>
-                        <a href="clinicalchemistry.html">
+                    <li class="">
+                        
                             <h4> <svg xmlns="http://www.w3.org/2000/svg" width="58.543" height="63.354"
                                     viewBox="0 0 58.543 63.354">
                                     <g id="Group_24566" data-name="Group 24566"
@@ -746,19 +759,19 @@
                                             stroke="#002581" stroke-miterlimit="10" stroke-width="1.5"></ellipse>
                                     </g>
                                 </svg>
-                                Clinical Chemistry
+                                Clinical Chemistry <span class="plusminus">+</span>
                             </h4>
-                        </a>
-                        <!-- <ul>
-              <li><a href="#">Analyzers</a></li>
-              <li><a href="#">System Reagents</a></li>
-              <li><a href="#">System Consumables</a></li>
-              <li><a href="#">Generic Reagents</a></li>
-              <li><a href="#">Generic Consumables</a></li>
-            </ul> -->
+                        
+                            <ul>
+                              <li><a href="clinicalchemistry.html">Analyzers</a></li>
+                              <li><a href="clinicalchemistry.html">System Reagents</a></li>
+                              <li><a href="clinicalchemistry.html">System Consumables</a></li>
+                              <li><a href="clinicalchemistry.html">Generic Reagents</a></li>
+                              <li><a href="clinicalchemistry.html">Generic Consumables</a></li>
+                            </ul>
                     </li>
-                    <li>
-                        <a href="immunoassay.html">
+                    <li class="">
+                        
                             <h4> <svg xmlns="http://www.w3.org/2000/svg" width="47.389" height="41.348"
                                     viewBox="0 0 47.389 41.348">
                                     <g id="Group_25707" data-name="Group 25707"
@@ -781,20 +794,20 @@
                                             stroke-linecap="round" stroke-width="1.5"></path>
                                     </g>
                                 </svg>
-                                Immuno Assay
+                                Immuno Assay <span class="plusminus">+</span>
                             </h4>
-                        </a>
-                        <!-- <ul>
-              <li><a href="#">Analyzers</a></li>
-              <li><a href="#">System Reagents</a></li>
-              <li><a href="#">System Consumables</a></li>
-              <li><a href="#">Generic Reagents</a></li>
-              <li><a href="#">Generic Consumables</a></li>
-            </ul> -->
+                        
+                            <ul>
+                              <li><a href="immunoassay.html">Analyzers</a></li>
+                              <li><a href="immunoassay.html">System Reagents</a></li>
+                              <li><a href="immunoassay.html">System Consumables</a></li>
+                              <li><a href="immunoassay.html">Generic Reagents</a></li>
+                              <li><a href="immunoassay.html">Generic Consumables</a></li>
+                            </ul>
                     </li>
 
-                    <li>
-                        <a href="glucose.html">
+                    <li class="">
+                        
                             <h4> <svg xmlns="http://www.w3.org/2000/svg" width="47.389" height="41.348"
                                     viewBox="0 0 47.389 41.348">
                                     <g id="Group_25707" data-name="Group 25707"
@@ -817,13 +830,18 @@
                                             stroke-linecap="round" stroke-width="1.5"></path>
                                     </g>
                                 </svg>
-                                Glucose
+                                Glucose <span class="plusminus">+</span>
                             </h4>
-                        </a>
+                            <ul>
+                              <li><a href="glucose.html">Meters</a></li>
+                              <li><a href="glucose.html">Test Strips</a></li>
+                              <li><a href="glucose.html">Consumables</a></li>
+                             
+                            </ul>
 
                     </li>
-                    <li>
-                        <a href="hemoglobin.html">
+                    <li class="">
+                        
                             <h4> <svg xmlns="http://www.w3.org/2000/svg" width="22.327" height="19.701"
                                     viewBox="0 0 22.327 19.701">
                                     <g id="Group_28148" data-name="Group 28148"
@@ -838,19 +856,18 @@
                                             stroke-width="1"></path>
                                     </g>
                                 </svg>
-                                Hemoglobin
+                                Hemoglobin <span class="plusminus">+</span>
                             </h4>
-                        </a>
-                        <!-- <ul>
-              <li><a href="#">Analyzers</a></li>
-              <li><a href="#">System Reagents</a></li>
-              <li><a href="#">System Consumables</a></li>
-              <li><a href="#">Generic Reagents</a></li>
-              <li><a href="#">Generic Consumables</a></li>
-            </ul> -->
+                        
+                            <ul>
+                              <li><a href="hemoglobin.html">Meters</a></li>
+                              <li><a href="hemoglobin.html">Test Cuvodies</a></li>
+                              <li><a href="hemoglobin.html">Consumables</a></li>
+                             
+                            </ul>
                     </li>
-                    <li>
-                        <a href="rapid.html">
+                    <li class="">
+                     
                             <h4> <svg xmlns="http://www.w3.org/2000/svg" width="58.518" height="58.615"
                                     viewBox="0 0 58.518 58.615">
                                     <g id="Group_25710" data-name="Group 25710"
@@ -884,19 +901,18 @@
                                             stroke-linecap="round" stroke-width="1.5"></path>
                                     </g>
                                 </svg>
-                                Rapid
+                                Rapid <span class="plusminus">+</span>
                             </h4>
-                        </a>
-                        <!-- <ul>
-              <li><a href="#">Analyzers</a></li>
-              <li><a href="#">System Reagents</a></li>
-              <li><a href="#">System Consumables</a></li>
-              <li><a href="#">Generic Reagents</a></li>
-              <li><a href="#">Generic Consumables</a></li>
-            </ul> -->
+                        
+                        <ul>
+                          <li><a href="rapid.html">Infectious</a></li>
+                          <li><a href="rapid.html">Speciality</a></li>
+                          
+                         
+                        </ul>
                     </li>
-                    <li>
-                        <a href="elisa.html">
+                    <li class="">
+                       
                             <h4>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30.283" height="47.105"
                                     viewBox="0 0 30.283 47.105">
@@ -945,20 +961,20 @@
                                         </g>
                                     </g>
                                 </svg>
-                                Elisa
+                                Elisa <span class="plusminus">+</span>
                             </h4>
-                        </a>
-                        <!-- <ul>
-              <li><a href="#">Analyzers</a></li>
-              <li><a href="#">System Reagents</a></li>
-              <li><a href="#">System Consumables</a></li>
-              <li><a href="#">Generic Reagents</a></li>
-              <li><a href="#">Generic Consumables</a></li>
-            </ul> -->
+                        
+                            <ul>
+                              <li><a href="elisa.html">Generic Reagents</a></li>
+                              <li><a href="elisa.html">Analyzers</a></li>
+                              
+                             
+                            </ul>
                     </li>
-                    <li>
-                        <a href="rt-pcr.html">
-                            <h4> <svg xmlns="http://www.w3.org/2000/svg" width="42.061" height="45.285"
+                    <li class="">
+                        
+                            <h4> 
+                              <svg xmlns="http://www.w3.org/2000/svg" width="42.061" height="45.285"
                                     viewBox="0 0 42.061 45.285">
                                     <g id="Group_28076" data-name="Group 28076"
                                         transform="translate(939.336 -3616.746) rotate(41)">
@@ -975,20 +991,21 @@
                                             stroke-miterlimit="10" stroke-width="1.5"></path>
                                     </g>
                                 </svg>
-                                RT-PCR
+                                RT-PCR <span class="plusminus">+</span>
                             </h4>
-                        </a>
-                        <!-- <ul>
-              <li><a href="#">Analyzers</a></li>
-              <li><a href="#">System Reagents</a></li>
-              <li><a href="#">System Consumables</a></li>
-              <li><a href="#">Generic Reagents</a></li>
-              <li><a href="#">Generic Consumables</a></li>
-            </ul> -->
+                        
+                        <ul>
+                          <li><a href="rt-pcr.html">Generic Consumables</a></li>
+                          <li><a href="rt-pcr.html">Generic Reagents</a></li>
+                          <li><a href="rt-pcr.html">Anakyzers</a></li>
+                          <li><a href="rt-pcr.html">System Reagents</a></li>
+                          
+                        </ul>
                     </li>
-                    <li>
-                        <a href="ivfluids.html">
-                            <h4> <svg xmlns="http://www.w3.org/2000/svg" width="41.682" height="41.799"
+                    <li class="">
+                        
+                            <h4> 
+                              <svg xmlns="http://www.w3.org/2000/svg" width="41.682" height="41.799"
                                     viewBox="0 0 41.682 41.799">
                                     <g id="Group_27728" data-name="Group 27728" transform="translate(-558.351 -838)">
                                         <line id="Line_1045" data-name="Line 1045" x1="8.781" y2="5.221"
@@ -1024,19 +1041,19 @@
                                             stroke-width="1.5"></circle>
                                     </g>
                                 </svg>
-                                Iv Fluids
+                                Iv Fluids <span class="plusminus">+</span>
                             </h4>
-                        </a>
-                        <!-- <ul>
-              <li><a href="#">Analyzers</a></li>
-              <li><a href="#">System Reagents</a></li>
-              <li><a href="#">System Consumables</a></li>
-              <li><a href="#">Generic Reagents</a></li>
-              <li><a href="#">Generic Consumables</a></li>
-            </ul> -->
+                        
+                        <ul>
+                          <li><a href="ivfluids.html">Iv Fluids-500ml</a></li>
+                          <li><a href="ivfluids.html">Iv Fluids-400ml</a></li>
+                          <li><a href="ivfluids.html">Iv Fluids-300ml</a></li>
+                          <li><a href="ivfluids.html">Iv Fluids-100ml</a></li>
+                          
+                        </ul>
                     </li>
-                    <li>
-                        <a href="biologics.html">
+                    <li class="">
+                       
                             <h4>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="47.389" height="41.348"
                                     viewBox="0 0 47.389 41.348">
@@ -1060,14 +1077,20 @@
                                             stroke-linecap="round" stroke-width="1.5"></path>
                                     </g>
                                 </svg>
-                                Biologics
+                                Biologics  <span class="plusminus">+</span>
                             </h4>
-                        </a>
+                            <ul>
+                              <li><a href="biologics.html">Injectables</a></li>
+                              <li><a href="biologics.html">Consumables</a></li>
+                              
+                              
+                            </ul>
 
                     </li>
-                    <li>
-                        <a href="homehealthcare.html">
-                            <h4> <svg xmlns="http://www.w3.org/2000/svg" width="58.518" height="58.615"
+                    <li class="">
+                        
+                            <h4>
+                               <svg xmlns="http://www.w3.org/2000/svg" width="58.518" height="58.615"
                                     viewBox="0 0 58.518 58.615">
                                     <g id="Group_25710" data-name="Group 25710"
                                         transform="translate(701.142 -7560.732)">
@@ -1100,20 +1123,20 @@
                                             stroke-linecap="round" stroke-width="1.5"></path>
                                     </g>
                                 </svg>
-                                Home health care
+                                Home health care <span class="plusminus">+</span>
                             </h4>
-                        </a>
-                        <!-- <ul>
-              <li><a href="#">Analyzers</a></li>
-              <li><a href="#">System Reagents</a></li>
-              <li><a href="#">System Consumables</a></li>
-              <li><a href="#">Generic Reagents</a></li>
-              <li><a href="#">Generic Consumables</a></li>
-            </ul> -->
+                        
+                        <ul>
+                          <li><a href="homehealthcare.html">Devices</a></li>
+                          <li><a href="homehealthcare.html">Consumabled</a></li>
+                          <li><a href="homehealthcare.html">Accessories</a></li>
+                          
+                        </ul>
                     </li>
-                    <li>
-                        <a href="others.html">
-                            <h4><svg xmlns="http://www.w3.org/2000/svg" width="47.389" height="41.348"
+                    <li class="">
+                      
+                            <h4>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="47.389" height="41.348"
                                     viewBox="0 0 47.389 41.348">
                                     <g id="Group_25707" data-name="Group 25707"
                                         transform="translate(-830.791 -3468.617)">
@@ -1135,16 +1158,14 @@
                                             stroke-linecap="round" stroke-width="1.5"></path>
                                     </g>
                                 </svg>
-                                others
+                                others <span class="plusminus">+</span>
                             </h4>
-                        </a>
-                        <!-- <ul>
-              <li><a href="#">Analyzers</a></li>
-              <li><a href="#">System Reagents</a></li>
-              <li><a href="#">System Consumables</a></li>
-              <li><a href="#">Generic Reagents</a></li>
-              <li><a href="#">Generic Consumables</a></li>
-            </ul> -->
+                        
+                            <ul>
+                              <li><a href="others.html">Loucing Products</a></li>
+                              <li><a href="others.html">Spares</a></li>
+                              
+                            </ul>
                     </li>
                 </ul>
             </div>
@@ -1341,7 +1362,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+      
     </section>
 
     <footer>
@@ -1476,20 +1497,7 @@
         </div>
     </footer>
 
-    <script>
-        $(document).ready(function () {
-            $("#accordion li > h4").click(function () {
-
-                if ($(this).next().is(':visible')) {
-                    $(this).next().slideUp(300);
-                    $(this).children(".plusminus").text('+');
-                } else {
-                    $(this).next("#accordion ul").slideDown(300);
-                    $(this).children(".plusminus").text('-');
-                }
-            });
-        });
-    </script>
+    
 </body>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
