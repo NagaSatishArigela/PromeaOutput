@@ -459,6 +459,7 @@ section.newsletterSec {
     transition: 0.5s;
     cursor: pointer;
     font-size: 16px;
+    font: normal normal normal 14px/1 'FontAwesome' !important;
 }
 
 .teams {
@@ -2202,6 +2203,7 @@ div#customers-testimonials {
     flex-wrap: wrap;
     box-shadow: inset 0px 0px 12px #00000036;
     padding: 20px;
+    height: 180px;
 }
 
 .gridSvg-svg_main_wrapper-3ou g {
@@ -2302,7 +2304,7 @@ h4.title {
 h4.title a {
     position: absolute;
     font-size: 18px;
-    right: 0;
+    right: 20px;
     bottom: 23px;
 }
 
@@ -2475,6 +2477,7 @@ h4.title a {
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
+    font: normal normal normal 14px/1 FontAwesome !important;
 }
 
 .fa:hover {
@@ -2912,7 +2915,7 @@ section.investor-img .row {
     display: flex;
     margin: 20px 0 !important;
     /* background: #e9e9e9; */
-    padding: 30px;
+    padding: 10px;
     box-shadow: 0 0 14px -5px #BCB7BA;
 }
 
@@ -4038,6 +4041,7 @@ nav .nav_wrap_pc>ul>li .nav_sub .subBox1 .sub_left>ul>li.on>a {
 
 .social-icons a {
     color: #666;
+    font: normal normal normal 14px/1 'FontAwesome' !important;
 }
 
 .social-icons .fa-twitter:hover {
@@ -4378,7 +4382,7 @@ p.ml-5.mr-5 {
         height: 280px;
         right: 0;
         position: absolute;
-        top: 289.5px;
+        top: 290.5px;
     }
 
     .carousel-inner {
@@ -4653,6 +4657,7 @@ color:white
     cursor: pointer;
     font-size: 16px;
     color: black;
+    font-family: "Font Awesome 5 Brands" !important;
 }
 
 /* .hfeed.site{

@@ -8759,6 +8759,7 @@ nav .nav_wrap_pc>ul>li>a>span {
 
     .info_type1 .vision-type2 ul li:nth-child(3) div.concept_group03 {
         background: url(../images/en_vision3.png) no-repeat center;
+        margin-bottom: 105px;
     }
 
     .info_type1 .vision-type2 ul li em {
