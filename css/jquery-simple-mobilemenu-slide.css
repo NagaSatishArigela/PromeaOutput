@@ -6,6 +6,9 @@ body.mmactive {
   display: none;
   position: relative;
 }
+ol, ul {
+  padding-left: 0rem !important;
+}
 .sm_menu_outer.active .mobile_menu {
   display: block;
   padding-top: 60px;
