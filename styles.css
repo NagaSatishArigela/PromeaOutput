@@ -1064,6 +1064,9 @@ li.productCategory-shape_wrapper-22z:nth-child(1) {
         /* margin-right: 93px; */
     }
 
+    /* .mobSocial {
+        display: none;
+    } */
     .productCategory-main_wrapper_shape-2ui {
         width: 128px;
         height: 111px;
@@ -3596,6 +3599,7 @@ section.job-search.d-flex.flex-row {
         height: 650px;
         
     }
+    
 }
 
 .workwithus-section3-right {
@@ -4239,6 +4243,10 @@ ul.nav.nav-pills {
     .container-m.products-m {
         padding: 0px 0 40px;
     }
+
+    /* .mobSocial {
+        display: flex !important;
+    } */
 }
 
 .share h5 {
@@ -4492,7 +4500,7 @@ p.ml-5.mr-5 {
     }
 
     .product-right-sec {
-        width: auto;
+        width: 100%;
         padding-left: 0;
     }
 
