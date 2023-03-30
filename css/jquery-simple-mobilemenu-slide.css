@@ -12,6 +12,7 @@ ol, ul {
 .sm_menu_outer.active .mobile_menu {
   display: block;
   padding-top: 60px;
+  overflow: hidden;
 }
 .sm_menu_outer {
   height: 100vh;
