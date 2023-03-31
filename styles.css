@@ -4263,6 +4263,7 @@ ul.nav.nav-pills {
     font-size: 15px;
     color: #225280ed;
     font-weight: 600;
+    padding: 5px;
 }
 
 .fixScreen {
@@ -4406,8 +4407,6 @@ p.ml-5.mr-5 {
         flex-direction: column;
         flex-wrap: wrap;
     }
-
-    
 
     .d-mobile-block {
         display: block !important;
