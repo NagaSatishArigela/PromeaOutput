@@ -135,7 +135,7 @@ ol, ul {
   top: 18px;
   width: 0;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1281px) {
   #sm_menu_ham,
   .sm_menu_outer {
     display: none;
