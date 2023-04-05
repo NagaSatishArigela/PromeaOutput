@@ -2383,7 +2383,7 @@ h4.title a {
     right: 30px;
     top: 55%;
     transform: translateY(55%);
-    z-index: 2000;
+    z-index: 1000;
 }
 
 .top {

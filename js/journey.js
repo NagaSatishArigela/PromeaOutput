@@ -15,11 +15,20 @@
           (window.innerWidth || document.documentElement.clientWidth)
       );
     }
+    function isElementOutViewport(el) {
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top < 0
+      );
+    }
 
     function callbackFunc() {
       for (var i = 0; i < items.length; i++) {
         if (isElementInViewport(items[i])) {
           items[i].classList.add("in-view");
+        }
+        if (isElementOutViewport(items[i])) {
+          items[i].classList.remove("in-view");
         }
       }
     }
