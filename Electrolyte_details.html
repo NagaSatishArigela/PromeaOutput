@@ -2044,15 +2044,126 @@
               <div class="column-66">
                 <h4>Electrolyte - Analyzers</h4>
                 <h3 class="py-4">PA-100 Electrolyte Analyzer</h3>
-                <a
-                  data-toggle="pill"
-                  href="#pills-enquiry"
+                <button
                   class="enquire-btn text-white"
-                  data-bs-toggle="pill"
-                  onclick="window.scrollTo(0,1100)"
-                  >Enquire Now</a
+                  type="button"
+                  data-bs-toggle="modal" 
+                  data-bs-target="#exampleModal"
+                  >Enquire Now</button
                 >
                 <!-- <button class="enquire-btn">Enquire Now</button> -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Enquiry Form</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form
+                          action="sendmail.php"
+                          method="post"
+                          autocomplete="off"
+                          name="enquiry-form-google-sheet"
+                        >
+                          <div class="inputBox">
+                            <!-- <span>Name</span> -->
+                            <input
+                              type="text"
+                              name="name"
+                              required="required"
+                              placeholder="Full Name"
+                              style="font-family: 'poppins'"
+                            />
+                          </div>
+                          <div class="inputBox">
+                            <!-- <span>Email</span> -->
+                            <input
+                              type="text"
+                              name="email"
+                              required="required"
+                              placeholder="Email"
+                              style="font-family: 'poppins'"
+                            />
+                          </div>
+                          <div class="inputBox">
+                            <!-- <span>Phone No.</span> -->
+                            <input
+                              type="number"
+                              name="phone"
+                              required="required"
+                              placeholder="Phone No."
+                              style="font-family: 'poppins'"
+                            />
+                          </div>
+                          <div class="inputBox">
+                            <select
+                              id="productname"
+                              name="productname"
+                              style="font-family: 'poppins'; width: 95%;"
+                            >
+                              <option value="Select Option" selected>
+                                Select Option
+                              </option>
+                              <option
+                                value="PA 2000 Clinical Chemistry Analyzer"
+                              >
+                                PA 2000 Clinical Chemistry Analyzer
+                              </option>
+                              <option
+                                value="PA 200 Clinical Chemistry Analyzer"
+                              >
+                                PA 200 Clinical Chemistry Analyzer
+                              </option>
+                              <option
+                                value="Dr. Protech H+ Hemoglobin Analyzer"
+                              >
+                                Dr. Protech H+ Hemoglobin Analyzer
+                              </option>
+                              <option value="PA-100 Electrolyte Analyzer">
+                                PA-100 Electrolyte Analyzer
+                              </option>
+                              <option value="ProLISA">ProLISA</option>
+                              <option value="ProPCR">ProPCR</option>
+                              <option value="Iv Fluids">Iv Fluids</option>
+                            </select>
+                          </div>
+                          <div class="inputBox">
+                            <!-- <span>Message</span> -->
+                            <textarea
+                              required="required"
+                              name="message"
+                              placeholder="Type Your Message"
+                              style="font-family: 'poppins'; width: 95%;"
+                            ></textarea>
+                          </div>
+                          <div class="inputBox" style="
+                          display: flex;
+                          justify-content: center;
+                      ">
+                            <input
+                              type="submit"
+                              name="Submit"
+                              value="SEND"
+                              style="
+                                color: white;
+                                background-image: linear-gradient(
+                                  to right,
+                                  #225280ed,
+                                  #126f53de
+                                );
+                                font-family: 'poppins';
+                              "
+                            />
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <h4 class="mt-5 mb-3">Overview</h4>
                 <div style="text-align: justify; word-break: break-word">
                   Promea’s PA-100 Electrolyte Analyzer is a semi - automated,
