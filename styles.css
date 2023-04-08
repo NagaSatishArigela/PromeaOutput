@@ -2246,7 +2246,7 @@ div#customers-testimonials {
 
 .gridSvg-svg_content-1L6 p {
     width: 100%;
-    max-width: 300px;
+    /* max-width: 300px; */
     font-size: 16px;
     line-height: 1.3rem;
     font-weight: 400;
@@ -2336,9 +2336,9 @@ h4.title a {
         font-size: 15px;
     }
 
-    .gridSvg-svg_content-1L6 p {
+    /* .gridSvg-svg_content-1L6 p {
         max-width: 235px;
-    }
+    } */
 }
 
 .productCategory-shape_wrapper-22z .productCategory-main_wrapper_shape-2ui>svg {
@@ -4323,7 +4323,7 @@ p.ml-5.mr-5 {
     justify-content: center;
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1000px) {
     .gridSvg-link_wrapper-Cry {
         width: 95%;
     }
